@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express();
 
+const client = require("./config/db");
+
 app.get("/api/health", (req, res) =>{
     res.send("The Api is working.");
 });
-
 
 
 
